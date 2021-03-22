@@ -13,6 +13,7 @@ gem 'sinatra-contrib', '~> 2.0.8'
 
 gem 'i18n', '~> 1.8.2'
 gem 'config', '~> 2.2.1'
+gem 'jwt', '~> 2.2.1'
 
 gem 'pg', '~> 1.2.3'
 gem 'sequel', '~> 5.32.0'
