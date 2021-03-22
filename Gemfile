@@ -18,6 +18,7 @@ gem 'jwt', '~> 2.2.1'
 gem 'pg', '~> 1.2.3'
 gem 'sequel', '~> 5.32.0'
 gem 'sequel_secure_password', '~> 0.2.15'
+gem 'sequel-seed', '~> 1.1.2'
 
 gem 'dry-initializer', '~> 3.0.3'
 gem 'dry-validation', '~> 1.5.0'
