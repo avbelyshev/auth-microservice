@@ -12,6 +12,9 @@ queue.subscribe(manual_ack: true) do |delivery_info, properties, payload|
   exchange.publish(
     user_id.to_s,
     routing_key: properties.reply_to,
-    correlation_id: properties.correlation_id
+    correlation_id: properties.correlation_id,
+    headers: {
+      request_id: Thread.current[:request_id]
+    }
   )
 end
