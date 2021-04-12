@@ -10,6 +10,8 @@ gem 'puma', '~> 4.3.0'
 
 gem 'sinatra', '~> 2.0.8', require: 'sinatra/base'
 gem 'sinatra-contrib', '~> 2.0.8'
+gem 'rack-ougai', '~> 0.2.1'
+gem 'rack-request-id', '~> 0.0.4'
 
 gem 'i18n', '~> 1.8.2'
 gem 'config', '~> 2.2.1'
@@ -26,6 +28,10 @@ gem 'dry-validation', '~> 1.5.0'
 
 gem 'activesupport', '~> 6.0.0', require: false
 gem 'fast_jsonapi', '~> 1.5'
+
+group :development do
+  gem 'amazing_print'
+end
 
 group :test do
   gem 'rspec', '~> 3.9.0'
