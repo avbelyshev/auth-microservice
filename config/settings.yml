@@ -6,12 +6,13 @@ db:
   host: localhost
   user: postgres
   password: postgres
+  url: <%= ENV['AUTH_DATABASE_URL'] %>
 pagination:
   page_size: 10
 rabbitmq:
   host: <%= ENV['RABBITMQ_HOST']%>
   user: <%= ENV['RABBITMQ_USER']%>
-  password: <%= ENV['RABBITMQ_PASS']%>
+  password: <%= ENV['RABBITMQ_PASSWORD']%>
   consumer_pool: 10
 logger:
   path: log/app.log
