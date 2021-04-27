@@ -7,7 +7,7 @@ namespace :db do
     Sequel.extension :seed
 
     seeds = File.expand_path('../../db/seeds', __dir__)
-    DB = Sequel.connect(Settings.db.to_hash)
+    DB = Sequel.connect(Settings.db.url || Settings.db.to_hash)
 
     Sequel::Seeder.apply(DB, seeds)
   end
